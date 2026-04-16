@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent</title> 
+    <title>AfriTalent | La plateforme des freelances tech en Afrique</title> 
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Votre feuille de style personnelle --> 
@@ -12,10 +12,127 @@
 </head>
 
 <body> 
-
     <!-- Le contenu de la page sera ajoute ici --> 
 
+    <!-- Navigation Bootstrap commune a toutes les pages --> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="container"> 
+            <a class="navbar-brand" href="index.html">AfriTalent</a> 
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navMenu" 
+                aria-controls="navMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="navMenu"> 
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+    </nav> 
 
+    <!-- Contenu principal -->
+     <main>
+        <!-- section des freelances -->
+        <section class="freelance-section">
+            <h2>Nos Freelances Disponibles</h2>     
+            <div class="container mt-3">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/Crisp Taper Fade.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultant</p>
+                        <h3 class="card-title">Moustapha Ndiaye</h3>
+                        <p class="card-text">Développeur Web  engineer</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/pexels-kawerodriguess-15977087.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultant</p>
+                        <h3 class="card-title">Moustapha Ndiaye</h3>
+                        <p class="card-text">Marketing Digital</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/African Lady On Turtleneck Dress Holding A Tab.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultant</p>
+                        <h3 class="card-title">Emma Bernard</h3>
+                        <p class="card-text">Designer UI/UX  engineer</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/pexels-luna-lovegood-4087270.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultant</p>
+                        <h3 class="card-title">Moustapha Ndiaye</h3>
+                        <p class="card-text">Développeur Web  engineer</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/téléchargement (3).jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultante</p>
+                        <h3 class="card-title">Olivia Carter</h3>
+                        <p class="card-text">engineer informatique</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="images/téléchargement (4).jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p>Consultante</p>
+                        <h3 class="card-title">Olivia Carter</h3>
+                        <p class="card-text">Marketing Digital</p>
+                        <span>250 £ / projet</span>
+                        <div class="btn-freelances">
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Follow Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+     <footer> 
+        <div class="container py-4"> 
+            <p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+        </div> 
+    </footer> 
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 

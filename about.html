@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent</title> 
+    <title>AfriTalent | La plateforme des freelances tech en Afrique</title> 
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Votre feuille de style personnelle --> 
@@ -12,10 +12,77 @@
 </head>
 
 <body> 
-
     <!-- Le contenu de la page sera ajoute ici --> 
 
+    <!-- Navigation Bootstrap commune a toutes les pages --> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="container"> 
+            <a class="navbar-brand" href="index.html">AfriTalent</a> 
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navMenu" 
+                aria-controls="navMenu" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="navMenu"> 
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
+                </ul> 
+            </div> 
+        </div> 
+    </nav> 
+    <!-- Contenu principal -->
+     <main>
+        <!-- section a propos -->
+        <section class="about-section">
+            <div class="about-container py-5">
+                <h1>À propos d’AfriTalent</h1>
+                <p>
+                    AfriTalent est une plateforme dédiée à la mise en relation
+                    entre entreprises et freelances talentueux en Afrique.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias
+                     doloribus impedit suscipit molestiae totam minima vel nesciunt pariatur quo 
+                     reprehenderit laborum in magnam id eum nobis ab, porro sint?
+                <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id adipisci veniam corrupti
+                     dignissimos fugiat quidem labore reprehenderit voluptatum, est, deleniti porro 
+                     maiores assumenda placeat itaque saepe non maxime quos asperiores?
+                </p>
+            </div>
 
+            <div class="about-container py-5">
+                <h1>Notre Mission</h1>
+                <p>
+                    Faciliter l’accès au travail freelance et valoriser les talents africains.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse sed culpa nihil 
+                    sapiente rem molestiae laudantium sequi! Eaque culpa officia reiciendis voluptate
+                     itaque, beatae necessitatibus ratione a mollitia quis!
+                </p>
+            </div>
+
+            <div class="about-container py-5">
+                <h1>Notre Équipe</h1>
+                <p>
+                    Une équipe passionnée de développeurs, designers et entrepreneurs.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia
+                    labore ipsam nihil distinctio totam esse accusantium veniam enim voluptates
+                    maiores velit mollitia ducimus cum ab necessitatibus maxime, omnis quod!
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer> 
+        <div class="container py-4"> 
+            <p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
+        </div> 
+    </footer> 
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 
