@@ -3,11 +3,18 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>AfriTalent | La plateforme des freelances tech en Afrique</title> 
+    <title>AfriTalent</title>
+    <link rel="icon" href="images/téléchargement (5).jfif" type="image/svg+xml"> 
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Votre feuille de style personnelle --> 
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts Google --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
@@ -34,6 +41,9 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
                 </ul> 
+            </div>
+            <div>
+                <a href="connexion.html" class="btn btn-outline-light ms-2">Connexion</a>
             </div> 
         </div> 
     </nav> 
@@ -65,11 +75,93 @@
             </form>
         </section> 
     </main>
-    <!-- footer -->
-    <footer> 
+    <!-- Pied de page --> 
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-5">
+        <!-- div: Social media -->
+        <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>viellez-vous connecter sur nos réseaux sociaux</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+                <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="https://www.instagram.com" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+            <!-- Right -->
+        </div>
+        <!-- div: Social media -->
+        
+        <!-- div: Links  -->
+        <div class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>AfriTalent</h6>
+                    <p>AfriTalent est la plateforme de reference pour les freelances tech en Afrique. 
+                        Nous connectons les talents africains aux clients du monde entier.</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Nos Talents</h6>
+                    <ul>
+                        <li><a href="developpement-web.html" class="text-reset"><i class="fas fa-laptop-code me-3"></i>Développer</a></li>
+                        <li><a href="mobile.html" class="text-reset"><i class="fas fa-mobile-alt me-3"></i>iOS / Android</a></li>
+                        <li><a href="data-science.html" class="text-reset"><i class="fas fa-database me-3"></i>Data & IA</a></li>
+                        <li><a href="design-ux-ui.html" class="text-reset"><i class="fas fa-paint-brush me-3"></i>UX / UI</a></li>
+                        <li><a href="marketing-digital.html" class="text-reset"><i class="fas fa-bullhorn me-3"></i>Marketing </a></li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Navigation</h6>
+                    <ul>
+                        <li><a href="index.html" class="text-reset"><i class="fas fa-home"></i>Accueil</a></li>
+                        <li><a href="freelances.html" class="text-reset"><i class="fas fa-users"></i>Freelances</a></li>
+                        <li><a href="tarifs.html" class="text-reset"><i class="fas fa-tags"></i>Tarifs</a></li>
+                        <li><a href="about.html" class="text-reset"><i class="fas fa-info-circle"></i>À propos</a></li>
+                        <li><a href="contact.html" class="text-reset"><i class="fas fa-phone"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Dakar,+Senegal" class="text-reset"><i class="fas fa-home me-3"></i>senegal - Dakar</a></li>
+                        <li><a href="mailto:contact@afritalent.tech" class="text-reset"><i class="fas fa-envelope me-3"></i>contact@afritalent.tech</a></li>
+                        <li><a href="tel:+221335678958" class="text-reset"><i class="fas fa-phone me-3"></i> + 221 33 567 89 58</a></li>
+                        <li><a href="tel:+221335678958" class="text-reset"><i class="fas fa-print me-3"></i> + 221 33 567 89 58</a></li>
+                        <li><a href="horaire.html" class="text-reset"><i class="fas fa-clock me-3"></i>24h/24 & 7j/7</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- div: Links  -->
+
+        <!-- Copyright -->
+
         <div class="container py-4"> 
             <p>&copy; 2025 AfriTalent. Tous droits reserves.</p> 
         </div> 
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
     </footer>
     <!-- Bootstrap 5 via CDN : script JavaScript --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 

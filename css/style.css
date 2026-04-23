@@ -1,0 +1,65 @@
+
+/* general */
+@import url();
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+
+}
+body{
+    color: var(--bg-dark-color);}
+:root{
+    /* Background color */
+    --primary-color: #FD4766;
+    --Secondaire-color: #0e1525;
+    --bg-dark-color: #091020;
+    --bg-white: #fff;
+    --bg-success: #5cb85c;
+    --bg-dander: #d9534f;
+    --bg-primary: #0275d8;
+    --bg-warnning: #FFFF00; 
+    --gray-color: #c5c9d8bf;
+    --gradient-color: linear-gradient( -224deg, var(--primary-color) 0, #337DFF 100%);
+    --gradient-text: linear-gradient(120beg, #1C99FE 20,69% var(--primary-color)79,69%);
+    filter: progid DXImageTranform Microsoft gradient(starcColorstr="var(--primary-color)",
+     endColorstr="var(--secondary-color)", GradientType=1);
+
+     /* Text Color */
+     --primary-font: "Poppins", sans-serif;
+     --primary-text: #FD4766;
+     --text-gray: #c6c9d8bf;
+     --text-white: #fff;
+     --bg-primary: #0275d8;
+     --bg-warnning: #FFFF00; 
+     --bg-success: #5cb85c;
+     --bg-dark-color: #091020;
+     --bg-dander: #d9534f;
+
+}
+.navbar {
+    background-color: var(--bg-dark-color);
+    position: fixed ;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: var(--Secondaire-color);
+    font-size: 1.1rem;
+    font-family: Merriweather, serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
+    padding: 20px 0;
+}
+p {
+    font-family: "Merriweather", sans-serif;
+    line-height: 1.6;
+}
