@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>AfriTalent</title> 
-    <link rel="icon" href="images/téléchargement (5).jfif" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.ico.jfif" type="image/x-icon">
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Votre feuille de style personnelle --> 
@@ -15,72 +15,162 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- Font Awesome --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
-<body> 
 <!-- AfriTalent | La plateforme des freelances tech en Afrique -->
-<!-- Navigation Bootstrap commune a toutes les pages --> 
-    <nav class="navbar navbar-expand-lg navbar-dark "> 
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <!-- <img src="" alt="" width="50px" height="50"> -->
-                <p>Afri <span>Talent</span></p>
-                
+<body> 
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top custom-navbar">
+        <div class="container-fluid px-md-5"> 
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                Afri<span class="text-primary-talent">Talent</span>
             </a>
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navMenu" 
-                aria-controls="navMenu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button> 
-            <div class="collapse navbar-collapse" id="navMenu"> 
-                <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
-                </ul> 
-            </div>
-            <div>
-                <a href="connexion.html" class="btn btn-outline-light ms-2">Connexion</a>
-            </div>
-        </div> 
-    </nav> 
-    <!-- Contenu principal --> 
-    <main> 
-        <!-- Section Hero : accroche principale -->
-        <section id="hero"> 
-            <div class="container-hero py-5"> 
-                <h1>Trouvez le talent africain qu'il vous faut</h1> 
-                <p>AfriTalent connecte les freelances africains aux clients du monde entier.</p> 
-                <a href="freelances.html" class="btn btn-primary">Decouvrir les talents</a> 
-            </div> 
-        </section> 
-        <!-- Section Services --> 
-        <section id="services"> 
-            <div class="container py-5"> 
-                <h2>Nos domaines d'expertise</h2> 
-                <div class="row"> 
-                    <div class="col-md-4">
-                        <h3>Developpement Web</h3> 
-                        <p>Sites vitrine, applications web, e-commerce.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+            
+                <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
 
+                <div class="d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-3">
+                    
+                    <form class="search-navbar m-0" role="search" action="/recherche" method="GET">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light text-muted border-end-0">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input class="form-control bg-light border-start-0 ps-0 text-dark" type="search" placeholder="Rechercher..." aria-label="Rechercher" name="query">
+                        </div>
+                    </form>
+
+                    <div class="buton  d-flex align-items-center gap-2">
+                        <a href="connexion.html" class="btns-connexion btn-outline-light rounded-pill px-3 shadow-sm">Connexion</a>
+                        <a href="inscription.html" class="btn-inscription btn-outline-light rounded-pill px-3 shadow-sm">Inscription</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </nav>
+    <!-- contenu principal -->
+    
+    <main> 
+        <!-- SECTION HERO : DISPOSITION ASYMÉTRIQUE & TYPOGRAPHIE EXPRESSIVE -->
+        <section id="hero-premium" class="d-flex align-items-center"> 
+            <div class="container px-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-text-box">
+                        <span class="badge bg-primary-soft text-primary-talent mb-3 px-3 py-2 rounded-pill fw-semibold">L'élite de la Tech Africaine</span>
+                        <h1 class="display-3 fw-extrabold text-white mb-4">
+                            Trouvez le talent <br><span class="text-gradient">Africain</span> qu'il vous faut
+                        </h1> 
+                        <p class="lead text-white6£-afri mb-5">
+                            AfriTalent connecte de manière sécurisée et fluide les meilleurs freelances tech du continent africain aux opportunités du monde entier.
+                        </p> 
+                        <div class="d-flex gap-3 core-buttons">
+                            <a href="freelances.html" class="btn btn-primary-talent rounded-pill px-4 py-3 shadow">Découvrir les talents <i class="fas fa-arrow-right ms-2"></i></a> 
+                            <a href="#bento-section" class="btn btn-outline-light rounded-pill px-4 py-3">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative mt-5 mt-lg-0">
+                        <div class="hero-image-wrapper">
+                            <div class="floating-card card-1"><i class="fas fa-code text-primary-talent"></i> <span>+1200 Développeurs</span></div>
+                            <div class="floating-card card-2"><i class="fas fa-star text-warning"></i> <span>4.9/5 Avis clients</span></div>
+                            <img src="images/Img3 (4).jpg" alt="Freelance working" class="img-fluid rounded-4 shadow-2xl hero-img-asymmetric">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+         <!-- section Bento -->
+        <section id="bento-section" class="py-5 bg-dark-section">
+            <div class="container px-md-5 py-5">
+                <div class="text-center mb-5">
+                    <span class="badge bg-dark text-blue-talent border border-primary mb-3 px-3 py-2 rounded-pill">Processus</span>
+                    <h2 class="section-title text-white fw-bold display-5">Comment ça marche ?</h2>
+                    <p class="text-white-50">Une intégration simple, rapide et totalement sécurisée pour booster vos projets.</p>
+                </div>
+                
+                <div class="bento-grid">
+                    <!-- Carte 1 : Inscription (Large) -->
+                    <div class="bento-card bento-1">
+                        <div class="bento-overlay"></div>
+                        <div class="bento-content">
+                            <div class="bento-icon"><i class="fas fa-user-plus"></i></div>
+                            <h3>Créez votre compte</h3>
+                            <p>Accédez à notre panneau de configuration intelligent et configurez votre profil en quelques clics professionnels.</p>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 : Configuration (Petite) -->
+                    <div class="bento-card bento-2">
+                        <div class="bento-overlay"></div>
+                        <div class="bento-content">
+                            <div class="bento-icon"><i class="fas fa-sliders-h"></i></div>
+                            <h3>Configurez</h3>
+                            <p>Ajustez vos filtres de recherche exclusifs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3 : Intégration (Petite) -->
+                    <div class="bento-card bento-3">
+                        <div class="bento-overlay"></div>
+                        <div class="bento-content">
+                            <div class="bento-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3>Intégrez</h3>
+                            <p>Collaborez instantanément avec les talents choisis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Carte 4 : Analyse (Large) -->
+                    <div class="bento-card bento-4">
+                        <div class="bento-overlay"></div>
+                        <div class="bento-content">
+                            <div class="bento-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>4. Analysez vos résultats</h3>
+                            <p>Suivez l'avancement des livrables et gérez vos métriques de performance en temps réel grâce à notre dashboard analytique intégré.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Section Statistiques --> 
+        <section id="services-premium" class="py-5"> 
+            <div class="container px-md-5 py-5"> 
+                <div class="text-center mb-5">
+                    <h2>Nos domaines d'expertise</h2> 
+                    <p class="">Des experts hautement qualifiés pour répondre à tous vos défis technologiques.</p>
+                </div>
+                <div class="row g-4"> 
+                    <div class="col-md-4">
+                        <div class="service-card-premium1">
+                            <div class="icon-box bg-purple"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Développement Web</h3> 
+                            <p>Conception de sites vitrines sur mesure, applications web complexes, architectures Cloud et plateformes e-commerce scalables.</p>
+                        </div>
                     </div> 
                     <div class="col-md-4"> 
-                        <h3>Design Graphique</h3> 
-                        <p>Identite visuelle, UI/UX, illustrations.</p> 
+                        <div class="service-card-premium">
+                            <div class="icon-box bg-blue">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Design Graphique & UI/UX</h3> 
+                            <p>Création d'identités visuelles percutantes, maquettages interactifs haut de gamme et parcours utilisateurs (UI/UX) optimisés.</p>
+                        </div>
                     </div> 
                     <div class="col-md-4"> 
-                        <h3>Marketing Digital</h3> 
-                        <p>Reseaux sociaux, SEO, campagnes publicitaires.</p> 
+                        <div class="service-card-premium11">
+                            <div class="icon-box bg-green"><i class="fas fa-bullhorn"></i></div>
+                            <h3>Marketing Digital</h3> 
+                            <p>Gestion de réseaux sociaux, stratégies SEO poussées, campagnes publicitaires (Ads) et augmentation de votre ROI digital.</p>
+                        </div>
                     </div> 
                 </div> 
             </div> 
-        </section> 
-        <!-- Section Statistiques --> 
+        </section>
         <section id="statistiques"> 
             <div class="container py-5"> 
                 <h2>AfriTalent en chiffres</h2> 
@@ -91,40 +181,153 @@
                 </div> 
             </div> 
         </section> 
-        <!-- Section Temoignages --> 
-        <section id="temoignages"> 
-            <div class="container py-5"> 
-                <h2>Ce que disent nos clients</h2> 
-                <blockquote class="blockquote"> 
-                    <p>AfriTalent m'a permis de trouver un developpeur competent en moins de 48h.</p> 
-                    <footer class="blockquote-footer">Aminata Diallo, Directrice Marketing</footer> 
-                </blockquote> 
-            </div> 
-        </section> 
-    </main> 
+        <!-- SECTION TÉMOIGNAGES : CAROUSEL BOOTSTRAP FONCTIONNEL --> 
+       <section id="testimonials-carousel-section" class="py-5 bg-dark-section"> 
+        <div class="container py-5"> 
+            <div class="text-center mb-5">
+                <span class="badge bg-dark text-blue-talent border border-primary mb-3 px-3 py-2 rounded-pill">Avis clients</span>
+                <h2 class="section-title text-white fw-bold display-5">Ils nous font confiance</h2> 
+                <p class="text-white-50">Découvrez les retours d'expérience des entreprises qui recrutent sur AfriTalent.</p>
+            </div>
+
+            <div id="premiumTestimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators custom-indicators">
+                    <button type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide-to="4"></button>
+                </div>
+
+                <div class="carousel-inner text-center text-white pb-4">
+                    
+                    <div class="carousel-item active">
+                        <div class="testimonial-bubble shadow-lg mx-auto">
+                            <i class="fas fa-quote-right quote-icon-bg"></i>
+                            <div class="stars-rating mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fs-5 testimonial-text">"AfriTalent m'a permis de trouver un développeur Fullstack sénégalais ultra-compétent en moins de 48 heures. La gestion du projet s'est faite en toute transparence !"</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4 gap-3">
+                                <div class="avatar-wrapper">
+                                    <img src="images/Img3 (3).jpg" alt="Aminata Diallo" class="rounded-circle testimonial-avatar">
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="text-blue-talent mb-0 fw-bold">Aminata Diallo</h5>
+                                    <small class="text-white-50">Directrice Marketing, TechAfrique</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-bubble shadow-lg mx-auto">
+                            <i class="fas fa-quote-right quote-icon-bg"></i>
+                            <div class="stars-rating mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fs-5 testimonial-text">"Le système de Bento Grid et le suivi des résultats sont bluffants. Trouver des experts UX/UI basés au Kenya ou en Côte d'Ivoire n'a jamais été aussi intuitif."</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4 gap-3">
+                                <div class="avatar-wrapper">
+                                    <img src="images/téléchargement (4).jfif" alt="julliana Dubois" class="rounded-circle testimonial-avatar">
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="text-blue-talent mb-0 fw-bold">Marc Dubois</h5>
+                                    <small class="text-white-50">Fondateur de NextGen Studio</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-bubble shadow-lg mx-auto">
+                            <i class="fas fa-quote-right quote-icon-bg"></i>
+                            <div class="stars-rating mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fs-5 testimonial-text">"La qualité technique des profils est impressionnante. Notre nouvel ingénieur DevOps basé au Cameroun a restructuré toute notre infrastructure Cloud en un temps record."</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4 gap-3">
+                                <div class="avatar-wrapper">
+                                    <img src="images/Refined High-Top Fade.jfif" alt="Patrice Kone" class="rounded-circle testimonial-avatar">
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="text-blue-talent mb-0 fw-bold">Patrice Koné</h5>
+                                    <small class="text-white-50">CTO, KamCloud Services</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-bubble shadow-lg mx-auto">
+                            <i class="fas fa-quote-right quote-icon-bg"></i>
+                            <div class="stars-rating mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="text-white-50 far fa-star"></i>
+                            </div>
+                            <p class="fs-5 testimonial-text">"Ce qui me plaît le plus, c'est la sécurisation des paiements. Les freelances travaillent sereinement, et nous, nous ne débloquons les fonds que lorsque le code est validé."</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4 gap-3">
+                                <div class="avatar-wrapper">
+                                    <img src="images/Crisp Taper Fade.jfif" alt="Sarah Jenkins" class="rounded-circle testimonial-avatar">
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="text-blue-talent mb-0 fw-bold">Sarah Jenkins</h5>
+                                    <small class="text-white-50">Product Owner, GlobalTech NY</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonial-bubble shadow-lg mx-auto">
+                            <i class="fas fa-quote-right quote-icon-bg"></i>
+                            <div class="stars-rating mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fs-5 testimonial-text">"En tant que startup, recruter des talents hautement qualifiés à des tarifs compétitifs via AfriTalent a littéralement sauvé notre phase de lancement applicatif."</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4 gap-3">
+                                <div class="avatar-wrapper">
+                                    <img src="images/alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="Ousmane Sy" class="rounded-circle testimonial-avatar">
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="text-blue-talent mb-0 fw-bold">Ousmane Sy</h5>
+                                    <small class="text-white-50">Co-fondateur, Baobab Invest</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#premiumTestimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div> 
+    </section>
     <!-- Pied de page --> 
     <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-5">
         <!-- div: Social media -->
         <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
-                <span>viellez-vous connecter sur nos réseaux sociaux</span>
+                <h4>viellez-vous connecter sur nos réseaux sociaux</h4>
             </div>
-            <!-- Left -->
-        
-            <!-- Right -->
-            <div>
-                <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.google.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-                <a href="https://www.instagram.com" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com" class="me-4 text-reset"><i class="fab fa-github"></i></a>
-            </div>
-            <!-- Right -->
         </div>
         <!-- div: Social media -->
-        
+        <div class="social-media">
+            <div class="container text-center">
+                <div class="row social-icones">
+                    <div class="col"><a href="https://www.facebook.com"><img src="images/facboook.jpg" alt=""></a></div>
+                    <div class="col"><a href="https://www.instagram.com"><img src="images/insta.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.twitter.com"><img src="images/twitter.png" alt=""></a></div>                            
+                    <div class="col"><a href="https://www.linkedin.com"><img src="images/linkedin.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.snapchat.com"><img src="images/snap.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
         <!-- div: Links  -->
         <div class="">
             <div class="container text-center text-md-start mt-5">
@@ -141,7 +344,7 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Nos Talents</h6>
-                    <ul>
+                    <ul class="naviga">
                         <li><a href="developpement-web.html" class="text-reset"><i class="fas fa-laptop-code me-3"></i>Développer</a></li>
                         <li><a href="mobile.html" class="text-reset"><i class="fas fa-mobile-alt me-3"></i>iOS / Android</a></li>
                         <li><a href="data-science.html" class="text-reset"><i class="fas fa-database me-3"></i>Data & IA</a></li>
@@ -155,7 +358,7 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Navigation</h6>
-                    <ul>
+                    <ul class="naviga">
                         <li><a href="index.html" class="text-reset"><i class="fas fa-home"></i>Accueil</a></li>
                         <li><a href="freelances.html" class="text-reset"><i class="fas fa-users"></i>Freelances</a></li>
                         <li><a href="tarifs.html" class="text-reset"><i class="fas fa-tags"></i>Tarifs</a></li>
@@ -194,6 +397,5 @@
 
     <!-- Votre script JavaScript --> 
     <script src="js/main.js"></script>
-
 </body>
 </html>

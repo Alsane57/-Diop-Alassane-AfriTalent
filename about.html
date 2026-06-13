@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>AfriTalent</title> 
-    <link rel="icon" href="images/téléchargement (5).jfif" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.ico.jfif" type="image/x-icon">
     <!-- Bootstrap 5 via CDN : feuille de style --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Votre feuille de style personnelle --> 
@@ -22,32 +22,44 @@
     <!-- Le contenu de la page sera ajoute ici --> 
 
     <!-- Navigation Bootstrap commune a toutes les pages --> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-        <div class="container"> 
-            <a class="navbar-brand" href="index.html">AfriTalent</a> 
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navMenu" 
-                aria-controls="navMenu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button> 
-            <div class="collapse navbar-collapse" id="navMenu"> 
-                <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> 
-                </ul> 
-            </div> 
-            <div>
-                <a href="connexion.html" class="btn btn-outline-light ms-2">Connexion</a>
+       <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top custom-navbar">
+        <div class="container-fluid px-md-5"> 
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                Afri<span class="text-primary-talent">Talent</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+            
+                <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-3">
+                    
+                    <form class="search-navbar m-0" role="search" action="/recherche" method="GET">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light text-muted border-end-0">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input class="form-control bg-light border-start-0 ps-0 text-dark" type="search" placeholder="Rechercher..." aria-label="Rechercher" name="query">
+                        </div>
+                    </form>
+
+                    <div class="buton  d-flex align-items-center gap-2">
+                        <a href="connexion.html" class="btns-connexion btn-outline-light rounded-pill px-3 shadow-sm">Connexion</a>
+                        <a href="inscription.html" class="btn-inscription btn-outline-light rounded-pill px-3 shadow-sm">Inscription</a>
+                    </div>
+                </div> 
             </div>
-        </div> 
-    </nav> 
-    <!-- Contenu principal -->
+        </div>
+    </nav>
+    <!-- contenu principal -->
      <main>
         <!-- section a propos -->
         <section class="py-5 bg-white">
@@ -66,7 +78,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h6 class="text-primary fw-bold text-uppercase mb-3">Depuis 2015</h6>
+                        <h6 class="text-gradient-talent fw-bold text-uppercase mb-3">Depuis 2015</h6>
                         <h2 class="display-5 fw-bold mb-4">Une aventure humaine au service du digital</h2>
                         <p class="lead text-muted mb-4">
                         Tout a commencé dans un petit garage avec une idée simple : rendre le travail indépendant aussi stable et sécurisant qu'un CDI, tout en préservant la liberté des talents.
@@ -88,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#contact" class="btn btn-primary btn-lg px-4 rounded-pill">En savoir plus</a>
+                        <a href="#contact" class="btn-about btn-primary btn-lg px-4 rounded-pill">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -99,13 +111,13 @@
             
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm text-center h-100">
+                    <div class="card-about border-0 shadow-sm text-center h-100">
                         <div class="p-4">
                         <img src="images/Crisp Taper Fade.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
                         </div>
                         <div class="card-body pt-0">
                             <h5 class="card-title fw-bold mb-1">Marc-Antoine Vallet</h5>
-                            <p class="text-primary small mb-3">Fondateur & CEO</p>
+                            <p class="text-gradient-talent  small mb-3">Fondateur & CEO</p>
                             <div class="d-flex justify-content-center gap-3">
                                 <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.instagram.com" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
@@ -117,13 +129,13 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3">
-                <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-about border-0 shadow-sm text-center h-100">
                     <div class="p-4">
-                        <img src="images/Crisp Taper Fade.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
+                        <img src="images/African Lady On Turtleneck Dress Holding A Tab.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
                     </div>
                     <div class="card-body pt-0">
                         <h5 class="card-title fw-bold mb-1">Léa Girard</h5>
-                        <p class="text-primary small mb-3">Directrice Produit</p>
+                        <p class="text-gradient-talent  small mb-3">Directrice Produit</p>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="https://www.instagram.com" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
                             <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
@@ -135,13 +147,13 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm text-center h-100">
+                    <div class="card-about border-0 shadow-sm text-center h-100">
                         <div class="p-4">
-                            <img src="images/Crisp Taper Fade.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
+                            <img src="images/téléchargement (4).jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
                         </div>
                         <div class="card-body pt-0">
                             <h5 class="card-title fw-bold mb-1">Julien Costa</h5>
-                            <p class="text-primary small mb-3">CTO / Lead Dev</p>
+                            <p class="text-gradient-talent  small mb-3">CTO / Lead Dev</p>
                             <div class="d-flex justify-content-center gap-3">
                                 <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
@@ -153,13 +165,13 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3">
-                    <div class="card border-0 shadow-sm text-center h-100">
+                    <div class="card-about border-0 shadow-sm text-center h-100">
                         <div class="p-4">
-                            <img src="images/Crisp Taper Fade.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
+                            <img src="images/Refined High-Top Fade.jfif" class="card-img-top rounded-circle mx-auto" alt="Marc Antoine">
                         </div>
                         <div class="card-body pt-0">
                             <h5 class="card-title fw-bold mb-1">Julien Costa</h5>
-                            <p class="text-primary small mb-3">CTO / Lead Dev</p>
+                            <p class="text-gradient-talent small mb-3">CTO / Lead Dev</p>
                             <div class="d-flex justify-content-center gap-3">
                                 <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
@@ -178,8 +190,8 @@
                 <p class="text-muted">Des fondations solides pour une collaboration réussie.</p>
             </div>
 
-            <div class="row g-4 text-center">
-                <div class="col-md-6 col-lg-3">
+            <div class="row g-4 text-center  ">
+                <div class="col-md-6 col-lg-3 card-anime">
                     <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover">
                         <div>
                             <i class="bi bi-lightbulb fs-2"></i>
@@ -189,8 +201,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover card-anime">
                         <div>
                             <i class="bi bi-universal-access fs-2"></i>
                         </div>
@@ -199,8 +211,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover card-anime">
                         <div>
                             <i class="bi bi-people fs-2"></i>
                         </div>
@@ -209,8 +221,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover">
+                <div class="col-md-6 col-lg-3 ">
+                <div class="p-4 h-100 bg-light rounded-4 border-0 transition-hover card-anime">
                     <div>
                         <i class="bi bi-gem fs-2"></i>
                     </div>
@@ -225,7 +237,6 @@
             <a href="contact.html">
                 <h2 class="text-center mb-5 fw-bold">Contactez-nous</h2>
             </a>
-            <form>
     </main>
    <!-- Pied de page --> 
     <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-5">
@@ -233,23 +244,21 @@
         <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
-                <span>viellez-vous connecter sur nos réseaux sociaux</span>
+                <h4>viellez-vous connecter sur nos réseaux sociaux</h4>
             </div>
-            <!-- Left -->
-        
-            <!-- Right -->
-            <div>
-                <a href="https://web.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.google.com" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-                <a href="https://www.instagram.com" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com" class="me-4 text-reset"><i class="fab fa-github"></i></a>
-            </div>
-            <!-- Right -->
         </div>
         <!-- div: Social media -->
-        
+        <div class="social-media">
+            <div class="container text-center">
+                <div class="row social-icones">
+                    <div class="col"><a href="https://www.facebook.com"><img src="images/facboook.jpg" alt=""></a></div>
+                    <div class="col"><a href="https://www.instagram.com"><img src="images/insta.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.twitter.com"><img src="images/twitter.png" alt=""></a></div>                            
+                    <div class="col"><a href="https://www.linkedin.com"><img src="images/linkedin.png" alt=""></a></div>
+                    <div class="col"><a href="https://www.snapchat.com"><img src="images/snap.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
         <!-- div: Links  -->
         <div class="">
             <div class="container text-center text-md-start mt-5">
