@@ -1,0 +1,196 @@
+/* responsive  */
+@media (max-width: 1199.98px) {
+  .navbar-nav {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1rem;
+  }
+  
+  .search-navbar {
+    width: 100%;
+  }
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* Ajustement responsive pour les petits écrans (mobile) */
+@media (max-width: 576px) {
+    .stat-number {
+        font-size: 2.8rem; /* Un poil plus petit sur petit mobile pour éviter les coupures */
+    }
+    .stat-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Responsive pour les smartphones et tablettes */
+@media (max-width: 992px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .bento-1, .bento-2, .bento-3, .bento-4 {
+        grid-column: span 1;
+        height: 280px;
+    }
+}
+@media (max-width: 768px) {
+    .page-title-freelance {
+        font-size: 2.2rem; 
+    }
+    .subtitle-freelance {
+        font-size: 1rem;
+    }
+}
+/*MODE MOBILE (Écrans inférieurs à 767px — Testé pour 375px)*/
+@media (max-width: 767.98px) {
+    /* 1. Typographie Expressive adaptée au Mobile */
+    .hero-title, .display-3 {
+        font-size: 2.2rem !important; /* On réduit le titre pour éviter qu'il coupe */
+        line-height: 1.3;
+    }
+    
+    #hero-premium {
+        padding: 60px 0;
+        text-align: center; /* Centre le texte sur mobile pour un meilleur look */
+    }
+
+    /* 2. Ajustement des boutons du Hero */
+    .core-buttons {
+        flex-direction: column; /* Aligne les boutons l'un sous l'autre */
+        gap: 12px !important;
+    }
+    
+    .core-buttons .btn {
+        width: 100%; /* Les boutons prennent toute la largeur sur smartphone */
+    }
+
+    /* 3. Visuel Asymétrique du Hero */
+    .hero-image-wrapper {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    
+    .hero-img-asymmetric {
+        transform: none !important; /* On enlève l'inclinaison 3D sur mobile */
+        border-radius: 16px;
+    }
+    
+    /* On masque ou réduit les badges flottants pour ne pas surcharger le 375px */
+    .floating-card {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+    .card-1 { top: -10px; left: 10px; }
+    .card-2 { bottom: -10px; right: 10px; }
+
+    /* 4. Bento Grid sur Mobile */
+    .bento-grid {
+        grid-template-columns: 1fr !important; /* 1 seule colonne obligatoire */
+        gap: 16px;
+    }
+    
+    .bento-1, .bento-2, .bento-3, .bento-4 {
+        grid-column: span 1 !important; /* Tout le monde prend 100% de large */
+        height: 260px; /* Un peu moins haut sur mobile */
+        padding: 25px;
+    }
+
+    /* 5. Témoignages (Carousel) */
+    .testimonial-bubble {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem !important;
+    }
+    
+    /* 6. Ajustement de la Navbar Mobile */
+    .custom-navbar .collapse {
+        background: #0B0F19; /* Fond opaque pour le menu déroulant mobile */
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .search-navbar {
+        width: 100%;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .hero-title, .display-3 {
+        font-size: 3rem !important;
+    }
+
+    #hero-premium {
+        padding: 80px 0;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+
+    .bento-1, .bento-4 {
+        grid-column: span 2 !important; /* Les grandes restent grandes */
+    }
+    
+    .bento-2, .bento-3 {
+        grid-column: span 1 !important; /* Les petites se mettent côte à côte */
+    }
+    
+    /* Ajustement du visuel de droite */
+    .hero-img-asymmetric {
+        transform: perspective(1000px) rotateY(-3deg) rotateX(3deg); /* Inclinaison adoucie */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 767.98px) {
+    
+    /* Réduction de la taille des stats pour éviter les retours à la ligne vilains */
+    .stat-number {
+        font-size: 2.6rem !important;
+        margin-bottom: 5px;
+    }
+    
+    .stat-card {
+        padding: 25px 15px !important;
+        border-radius: 18px !important;
+    }
+
+    .stat-label {
+        font-size: 0.85rem !important;
+    }
+
+    /* Espacement et centrage des réseaux sociaux sur petit écran */
+    .social-wrapper {
+        gap: 12px !important; /* On resserre un peu les cercles */
+    }
+    
+    .social-circle {
+        width: 38px !important;  /* Cercles légèrement plus petits sur mobile */
+        height: 38px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    
+    .stat-number {
+        font-size: 3rem !important;
+    }
+    
+    .stat-card {
+        padding: 30px 20px !important;
+    }
+}
