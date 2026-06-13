@@ -212,3 +212,13 @@
     background-color: #000 !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px); /* Légère remontée */
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

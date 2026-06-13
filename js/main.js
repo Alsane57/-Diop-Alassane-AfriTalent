@@ -56,4 +56,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'smooth'
             });
         });
+    // 3. Compteurs animés (IntersectionObserver) [2, 5]
+    const counterOptions = { threshold: 0.5 }; // Se déclenche quand 50% de l'élément est visible
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = +counter.getAttribute('data-target'); // Récupère la valeur cible [4]
+                let count = 0;
+                const speed = 100; // Vitesse de l'animation
+                
+                const updateCount = () => {
+                    const increment = target / speed;
+                    if (count < target) {
+                        count += increment;
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+                observer.unobserve(counter); // On arrête d'observer après l'animation
+            }
+        });
+    }, counterOptions);
+
+    document.querySelectorAll('.stat-number').forEach(num => counterObserver.observe(num));
+
+    // 4. Apparition des sections en fondu (Fade-in) [2, 4, 9]
+    const fadeOptions = { threshold: 0.2 };
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Ajoute la classe CSS d'apparition [2]
+                fadeObserver.unobserve(entry.target);
+            }
+        });
+    }, fadeOptions);
+
+    document.querySelectorAll('.fade-in').forEach(section => fadeObserver.observe(section));
+
+    // 5. Année dynamique pour le Footer [10, 11]
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 })
