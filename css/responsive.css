@@ -24,7 +24,6 @@
         padding: 30px 20px;
     }
 }
-
 /* Responsive pour les smartphones et tablettes */
 @media (max-width: 992px) {
     .bento-grid {
@@ -178,12 +177,11 @@
     }
     
     .social-circle {
-        width: 38px !important;  /* Cercles légèrement plus petits sur mobile */
+        width: 38px !important; 
         height: 38px !important;
         font-size: 1rem !important;
     }
 }
-
 @media (min-width: 768px) and (max-width: 1199.98px) {
     
     .stat-number {
@@ -193,4 +191,24 @@
     .stat-card {
         padding: 30px 20px !important;
     }
+}
+/* Style de base du bouton toggle dans la navbar */
+.theme-btn-style {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-btn-style:hover {
+    color: #3b82f6; 
+    transform: scale(1.1);
+}
+.navbar-scrolled {
+    padding: 5px; 
+    background-color: #000 !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
