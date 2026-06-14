@@ -64,217 +64,286 @@
         </div>
     </nav>
     <!-- Contenu principal -->
-     <main>
+    <main>
         <!-- section des freelances -->
-        <section class="freelance-section">
+        <section>
             <div class="container text-center my-5">
                 <h1 class="page-title-freelance">
                     Nos <span class="text-gradient-talent">Freelances</span> Disponibles
                 </h1>
                 <p class="subtitle-freelance">Découvrez les meilleurs talents africains prêts à propulser vos projets.</p>
-            </div>   
-            <div class="container-card mt-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/Crisp Taper Fade.jfif" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Moustapha Ndiaye</h3>
-                        <p class="card-text">Développeur Web  engineer</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en interfaces intuitives et design d'applications mobiles centrées utilisateur.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+            </div>  
+            <!-- Barre de filtres -->
+            <div class="container text-center mb-5">
+                <div class="btn-group flex-wrap gap-2" role="group" aria-label="Filtres freelances">
+                    <button type="button" class="btn btn-outline-primary rounded-pill filter-btn active" data-filter="all">Tous</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filter-btn" data-filter="developpement">Développement</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filter-btn" data-filter="design">Design</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filter-btn" data-filter="marketing">Marketing</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4" id="freelance-grid">               
+                    <!-- Freelance 1 : Développement -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="developpement">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/Crisp Taper Fade.jfif" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Moustapha Ndiaye</h3>
+                                <p class="card-text text-muted small">Développeur Web Engineer. Spécialiste en interfaces intuitives.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-kawerodriguess-15977087.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Moustapha Ndiaye</h3>
-                        <p class="card-text">Marketing Digital</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en stratégie marketing digitale et optimisation des campagnes publicitaires.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+                    <!-- Freelance 2 : Marketing -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="marketing">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-kawerodriguess-15977087.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Moustapha Ndiaye</h3>
+                                <p class="card-text text-muted small">Marketing Digital. Spécialiste en stratégie digitale.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/African Lady On Turtleneck Dress Holding A Tab.jfif" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Emma Bernard</h3>
-                        <p class="card-text">Designer UI/UX  engineer</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en design d'interfaces utilisateur et en expérience client.</p>
-                        </div>  
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+                    <!-- Freelance 3 : Design -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="design">
+                        <div class="card h-100 shadow-sm  rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/African Lady On Turtleneck Dress Holding A Tab.jfif" alt="Emma Bernard">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Emma Bernard</h3>
+                                <p class="card-text text-muted small">Designer UI/UX Engineer. Spécialiste en expérience client.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-card mt-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-luna-lovegood-4087270.jpg" alt="Card image" style="width:100%;">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Moustapha Ndiaye</h3>
-                        <p class="card-text">Développeur Web  engineer</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en interfaces intuitives et design d'applications mobiles centrées utilisateur.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/téléchargement (3).jfif" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">engineer informatique</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en ingénierie informatique et en développement logiciel.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+            <div class="container">
+                <div class="row g-4" id="freelance-grid">               
+                    <!-- Freelance 1 : Développement -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="developpement">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/Img3 (1).jpg" alt="Card image">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Papa Moussa Diop</h3>
+                                <p class="card-text text-muted small">Développeur Web Engineer. Spécialiste en interfaces intuitives.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/téléchargement (4).jfif" alt="Card image" style="width:100% ;">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">Marketing Digital</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en stratégie marketing digitale et optimisation des campagnes publicitaires.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-card mt-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-luna-lovegood-4087270.jpg" alt="Card image" style="width:100%;">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Moustapha Ndiaye</h3>
-                        <p class="card-text">Développeur Web  engineer</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en interfaces intuitives et design d'applications mobiles centrées utilisateur.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+                    <!-- Freelance 2 : Marketing -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="marketing">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/img0 (1).jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Alimatou Arstrong</h3>
+                                <p class="card-text text-muted small">Marketing Digital. Spécialiste en stratégie digitale.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-pixabay-356056.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">engineer informatique</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en ingénierie informatique et en développement logiciel.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-shkrabaanthony-5475750.jpg" alt="Card image" style="width:100% ;">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">Marketing Digital</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en stratégie marketing digitale et optimisation des campagnes publicitaires.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+                    <!-- Freelance 3 : Design -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="design">
+                        <div class="card h-100 shadow-sm  rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/farzad-p-xSl33Wxyc-unsplash.jpg" alt="Emma Bernard">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Marriane Coller</h3>
+                                <p class="card-text text-muted small">Designer UI/UX Engineer. Spécialiste en expérience client.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-card mt-3 ">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-luna-lovegood-4087270.jpg" alt="Card image" style="width:100%;">
-                    <div class="card-body">
-                        <p>Consultant</p>
-                        <h3 class="card-title">Moustapha Ndiaye</h3>
-                        <p class="card-text">Développeur Web  engineer</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en interfaces intuitives et design d'applications mobiles centrées utilisateur.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-pixabay-356056.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">engineer informatique</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en ingénierie informatique et en développement logiciel.</p>
-                        </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+            <div class="container">
+                <div class="row g-4" id="freelance-grid">               
+                    <!-- Freelance 1 : Développement -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="developpement">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-luna-lovegood-4087270.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Assane Sy</h3>
+                                <p class="card-text text-muted small">Développeur Web Engineer. Spécialiste en interfaces intuitives.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/pexels-shkrabaanthony-5475750.jpg" alt="Card image" style="width:100% ;">
-                    <div class="card-body">
-                        <p>Consultante</p>
-                        <h3 class="card-title">Olivia Carter</h3>
-                        <p class="card-text">Marketing Digital</p>
-                        <div>
-                            <p class="card-text text-muted">Spécialiste en stratégie marketing digitale et optimisation des campagnes publicitaires.</p>
+                    <!-- Freelance 2 : Marketing -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="marketing">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-pixabay-356056.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Aly Ngom</h3>
+                                <p class="card-text text-muted small">Marketing Digital. Spécialiste en stratégie digitale.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
-                        <span>250 £ / projet</span>
-                        <div class="btn-freelances">
-                            <a href="#" class="btn btn-primary">Message</a>
-                            <a href="#" class="btn btn-primary">Follow Me</a>
+                    </div>
+                    <!-- Freelance 3 : Design -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="design">
+                        <div class="card h-100 shadow-sm  rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-shkrabaanthony-5475750.jpg" alt="Emma Bernard">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Emili Traore</h3>
+                                <p class="card-text text-muted small">Designer UI/UX Engineer. Spécialiste en expérience client.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="plus-freelance">
-                <a href="freelances.html" class="btn btn-primary">Voir plus de freelances</a>
+            <div class="container">
+                <div class="row g-4" id="freelance-grid">               
+                    <!-- Freelance 1 : Développement -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="developpement">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-divinetechygirl-1181281.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Ousmane Diop</h3>
+                                <p class="card-text text-muted small">Développeur Web Engineer. Spécialiste en interfaces intuitives.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Freelance 2 : Marketing -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="marketing">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Mouhamed Fall</h3>
+                                <p class="card-text text-muted small">Marketing Digital. Spécialiste en stratégie digitale.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Freelance 3 : Design -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="design">
+                        <div class="card h-100 shadow-sm  rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/Img3 (4).jpg" alt="Emma Bernard">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Adja Fatou Cisse</h3>
+                                <p class="card-text text-muted small">Designer UI/UX Engineer. Spécialiste en expérience client.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-4" id="freelance-grid">               
+                    <!-- Freelance 1 : Développement -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="developpement">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/pexels-mizunokozuki-12899156.jpg" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Serigne Ndiaye</h3>
+                                <p class="card-text text-muted small">Développeur Web Engineer. Spécialiste en interfaces intuitives.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Freelance 2 : Marketing -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="marketing">
+                        <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/Refined High-Top Fade.jfif" alt="Moustapha Ndiaye">
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Chiekh Ndiaye</h3>
+                                <p class="card-text text-muted small">Marketing Digital. Spécialiste en stratégie digitale.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Freelance 3 : Design -->
+                    <div class="col-12 col-md-6 col-lg-4 freelance-card fade-in" data-category="design">
+                        <div class="card h-100 shadow-sm  rounded-4 overflow-hidden">
+                            <img class="card-img-top" src="images/téléchargement (3).jfif" alt="Emma Bernard" >
+                            <div class="card-body">
+                                <p class="text-primary fw-bold mb-1">Consultant</p>
+                                <h3 class="card-title h5 fw-bold">Amy Diatta</h3>
+                                <p class="card-text text-muted small">Designer UI/UX Engineer. Spécialiste en expérience client.</p>
+                                <div class="fw-bold mb-3">250 £ / projet</div>
+                                <div class="btn-freelances">
+                                    <a href="#" class="btn btn-primary">Message</a>
+                                    <a href="#" class="btn btn-primary">Follow Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns-freelance">
+                <a href="freelances.html" class="plus">Voir plus de Freelance</a>
             </div>
         </section>
     </main>

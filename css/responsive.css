@@ -222,3 +222,8 @@
     opacity: 1;
     transform: translateY(0);
 }
+.projet{
+    color: #3b82f6; 
+    font-size: 1.rem;
+    font-weight: 800;
+}

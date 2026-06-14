@@ -65,32 +65,45 @@
     </nav>
     <!-- contenu principal -->
     <main>
-        <section class="contact-section">
+        <section class="contact-section fade-in"> 
             <h1>Contactez-nous</h1>
-            <p>N'hésitez pas à nous contacter pour toute question ou demande d'information.</p>
-            <form>
-                <div >
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nom</label>
-                        <input type="text" class="form-control" id="name" placeholder="Votre nom">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Votre email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Téléphone</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Votre téléphone">
-                    </div>
+            <p>N'hésitez pas à nous contacter pour toute question ou demande d'information.</p>        
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">                        <!-- Zone pour le message d'erreur -->
+                    <span class="error-msg text-danger small" id="nameError"></span>
+                </div>        
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    <span class="error-msg text-danger small" id="emailError"></span>
+                </div>
+                <!-- Note : Le sujet est obligatoire selon le sujet de projet -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Sujet</label>
+                    <select class="form-select" id="subject">
+                        <option value="">Choisissez un sujet</option>
+                        <option value="freelance">Je suis freelance</option>
+                        <option value="entreprise">Je suis une entreprise</option>
+                    </select>
+                    <span class="error-msg text-danger small" id="subjectError"></span>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
-                    <a class="btn btn-primary" href="#contact">SEND MESSAGE</a>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Votre message (min. 20 caractères)"></textarea>
+                    <span class="error-msg text-danger small" id="messageError"></span>
                 </div>
                 
+                <!-- Remplacement du <a> par un <button type="submit"> -->
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                
+                <!-- Zone pour le message de succès -->
+                <div id="successMessage" class="mt-3 alert alert-success d-none">
+                    Message envoyé avec succès !
+                </div>
             </form>
-        </section> 
+        </section>
     </main>
     <!-- Pied de page --> 
     <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-5">

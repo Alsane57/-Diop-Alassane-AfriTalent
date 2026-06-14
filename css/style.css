@@ -667,36 +667,32 @@ body {
     gap: 20px;
 }
 .freelance-card {
-    background-color: var(--bg-dark-color);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    color: var(--text-white);
+    text-align: center;
 }
-.container-card {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+#freelance-grid {
+    margin-top: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
-.container-card .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(240, 90, 126, 0.4) !important;
+.card{
+    overflow: hidden;   
 }
-.container-card .card::after {
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
+
+}
+.card::after {
     content: "";
     display: block;
     clear: both;
 }
-.container-card img {
+.freelance-card img {
     width: 100%;
-    height: 280px;
+    height: 250px;
     object-fit: cover;
     position: center;
     border-radius: 2px;
@@ -719,21 +715,32 @@ body {
     font-weight: 600;
     text-decoration: none;
     border-radius: 5px;
-}
-.btn-freelances a:hover {
-    background-color: var(--bg-dander) !important;
-    color:var(--text-white) !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
-    transform: translateY(-1px);
-    filter: brightness(1.1);
-}
-.plus-freelance{
-    margin-top: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
 
 }
-.plus-freelance a {
+.btns-freelance{
+    margin-top: 40px;
+    color: var(--text-white);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-align: center;
+}
+.btn-outline-primary:hover{
+    background: var(--gradient-color) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
+    border: none;
+    color: #fff !important;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.filter-btn :active{
+    background: var(--gradient-color) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
+}
+.btns-freelance a {
     padding: 10px 20px;
     background: var(--gradient-color) !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
@@ -746,7 +753,13 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
-
+.btn-freelances .plus:hover {
+    background-color: var(--bg-dander) !important;
+    color:var(--text-white) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(37, 99, 235, 0.4) !important;
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+}
 /* stylise mon page de tarifs */
 .tarifs-section {
     padding: 60px 0;
