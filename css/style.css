@@ -1227,7 +1227,7 @@ footer div ul li{
 footer div ul li a{
     color: var(--text-white);
     text-decoration: none;
-    transition: color 0.3s ease;$
+    transition: color 0.3s ease;
 }
 
 /* Couleur de ton Bleu Tech pour le titre principal */

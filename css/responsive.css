@@ -224,6 +224,62 @@
 }
 .projet{
     color: #3b82f6; 
-    font-size: 1.rem;
-    font-weight: 800;
+}
+/* --- Styles de base pour le Bento Grid (about.html) --- */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur PC */
+    grid-gap: 20px;
+}
+
+/* --- MEDIA QUERY : Adaptation Mobile (375px et moins) --- */
+@media screen and (max-width: 767px) {
+    /* 1. On force le Bento Grid à passer en 1 seule colonne [5, 6] */
+    .bento-grid {
+        grid-template-columns: 1fr !important;
+        grid-template-areas: none !important;
+    }
+
+    .bento-item {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 2. On réduit la taille des titres pour mobile [4, 7] */
+    h1 { font-size: clamp(1.5rem, 8vw, 2.2rem); }
+    h2 { font-size: 1.8rem; text-align: center; }
+
+    /* 3. On ajoute de l'espace interne pour éviter que le texte ne touche les bords */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* 4. On s'assure que les images ne débordent jamais [8] */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.social-img {
+    width: 32px;  /* Taille idéale pour le mobile */
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%; /* Si vous voulez des icônes rondes */
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+/* Effet au survol demandé par le projet [8] */
+.social-img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* --- Adaptation Tablette et Desktop --- */
+@media (min-width: 768px) {
+    .social-img {
+        width: 36px; /* Un peu plus grand sur tablette/PC */
+        height: 36px;
+    }
 }
